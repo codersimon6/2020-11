@@ -9,7 +9,7 @@ public class CountDownLatchTest {
         Thread[] threads = new Thread[10];
         CountDownLatch countDownLatch = new CountDownLatch(10);  //给定初始值
         for (int i = 0; i < 10; i++) {
-            final int j = i;  //(匿名)内部类只能访问final变量
+            final int j = i;  //(匿名)内部类只能访问final变量 
             threads[i] =  new Thread(new Runnable() {
                 @Override
                 public void run() {
