@@ -34,7 +34,7 @@ public class Server {
                 int i = 0;
                 while ( (str = in.readLine()) != null){  //按行读取客户端发送的数据
                     System.out.println(str);
-                    out.println("确实牛逼"+i );
+                    out.println("收到消息了！"+i );
                     i++;
                 }
             }catch (IOException e){
